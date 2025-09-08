@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth/auth.css">
+    <link rel="stylesheet" href="sidebar/sidebar.css">
+    <link rel="stylesheet" href="chat/chat.css">
+    <link rel="stylesheet" href="modals/modals.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Electron Chat</h1>
+            <button class="logout-btn" id="logoutBtn" style="display: none;">Logout</button>
+        </header>
+        
+        <!-- Auth Container -->
+        <div class="auth-container" id="authContainer"></div>
+
+        <!-- Main App Container -->
+        <div class="main-app" id="mainApp" style="display: none;"></div>
+
+        <!-- Modals Container -->
+        <div id="modalsContainer"></div>
+    </div>
+
+    <!-- Load all scripts -->
+    <script src="auth/auth.js"></script>
+    <script src="sidebar/sidebar.js"></script>
+    <script src="chat/chat.js"></script>
+    <script src="modals/modals.js"></script>
+    <script src="message.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>

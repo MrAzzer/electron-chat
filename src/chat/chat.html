@@ -1,0 +1,17 @@
+<div class="chat-container">
+    <div class="chat-header">
+        <h3 id="currentConversationName">Select a conversation</h3>
+        <button class="video-chat-btn" onclick="modals.showVideoChatModal()" id="videoChatBtn">Video Chat</button>
+    </div>
+    <div class="messages" id="messages">
+        <div class="message system">
+            Welcome! Select a conversation from the sidebar to start chatting.
+        </div>
+    </div>
+    
+    <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type your message..." disabled>
+        <button id="mediaButton" disabled><img src="src/fishing.svg" alt="Media"></button>
+        <button id="sendButton" disabled>Send</button>
+    </div>
+</div>

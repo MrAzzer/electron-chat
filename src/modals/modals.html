@@ -1,0 +1,39 @@
+<!-- New Conversation Modal -->
+<div class="modal" id="newConversationModal" style="display: none;">
+    <div class="modal-content">
+        <h3>Create New Conversation</h3>
+        <div class="form-group">
+            <label for="conversationName">Conversation Name:</label>
+            <input type="text" id="conversationName" placeholder="Enter conversation name">
+        </div>
+        <div class="modal-buttons">
+            <button class="cancel-btn" onclick="modals.hideNewConversationModal()">Cancel</button>
+            <button onclick="sidebar.createConversation()">Create</button>
+        </div>
+    </div>
+</div>
+
+<!-- Video Chat Modal -->
+<div class="modal" id="videoChatModal" style="display: none;">
+    <div class="modal-content">
+        <h3>Start Video Chat</h3>
+        <p>Would you like to start a video chat in this conversation?</p>
+        <div class="modal-buttons">
+            <button class="cancel-btn" onclick="modals.hideVideoChatModal()">Cancel</button>
+            <button onclick="modals.startVideoChat()">Start Video Chat</button>
+        </div>
+    </div>
+</div>
+
+<!-- Join Conversation Modal -->
+<div class="modal" id="joinConversationModal" style="display: none;">
+    <div class="modal-content">
+        <h3>Join a Conversation</h3>
+        <div class="conversations-to-join" id="availableConversationsList">
+            <!-- Available conversations will be loaded here -->
+        </div>
+        <div class="modal-buttons">
+            <button class="cancel-btn" onclick="modals.hideJoinConversationModal()">Cancel</button>
+        </div>
+    </div>
+</div>

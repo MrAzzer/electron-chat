@@ -1,0 +1,19 @@
+{
+  "name": "electron-chat-app",
+  "version": "1.0.0",
+  "description": "A chat app with MySQL database",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "rebuild": "npm rebuild"
+  },
+  "devDependencies": {
+    "electron": "^27.3.11"
+  },
+  "dependencies": {
+    "mysql2": "^3.14.4"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,98 @@
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #1e293b;
+    padding: 25px;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+    color: #e2e8f0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    background: transparent;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #64748b;
+}
+
+/* Join Conversation Modal */
+.conversations-to-join {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    border: 1px solid #334155;
+    border-radius: 4px;
+}
+
+.conversation-to-join {
+    padding: 15px;
+    border-bottom: 1px solid #334155;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.conversation-to-join:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.conversation-to-join:last-child {
+    border-bottom: none;
+}
+
+.conversation-to-join .conversation-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+.conversation-to-join .conversation-meta {
+    font-size: 11px;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Video chat modal specific styles */
+#videoChatModal .modal-content {
+    max-width: 400px;
+}
